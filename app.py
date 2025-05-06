@@ -4,7 +4,7 @@ app = Flask(__name__)
 tasklist = [['Walk Dog', True], ['Wash Dishes', False], ['Watch Movie', True]]
 
 @app.route('/')
-def homee():
+def home():
     return render_template('tasklist.html', TaskList = tasklist)
 
 if __name__ == '__main__': 
